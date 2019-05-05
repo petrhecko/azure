@@ -7,6 +7,9 @@
         },
         "rgLocation": {
             "type": "string"
+        },
+        "storageAccountName": {
+            "type": "string"
         }
     },
     "variables": {
