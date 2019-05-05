@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.1",
     "parameters": {
         "rgName":{
-            "value": "ResourceGroup2"
+            "value": "ResourceGroup3"
             },
         "rgLocation":{
             "value": "Central US"
