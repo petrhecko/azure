@@ -35,11 +35,11 @@
                     "uri": "[variables('stUri')]",
                     "contentVersion": "1.0.0.0"
                 },
-            "parameters": {
-                "storageAccountName": {
-                    "value": "[parameters('storageAccountName')]"
+                "parameters": {
+                    "storageAccountName": {
+                        "value": "[parameters('storageAccountName')]"
+                    }
                 }
-            }
             }
         }
     ],
