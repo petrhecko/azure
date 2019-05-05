@@ -2,7 +2,15 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        
+        "rgName": {
+            "type": "string"
+        },
+        "rgLocation": {
+            "type": "string"
+        },
+        "storageAccountName": {
+            "type": "string"
+        }
     },
     "variables": {
         "stUri": "https://raw.githubusercontent.com/petrhecko/azure/master/templates/st_template.json"
@@ -12,17 +20,17 @@
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2017-05-10",
-            "location": "Central US",
-            "name": "ResourceGroup2",
+            "location": "[parameters('rgLocation')]",
+            "name": "[parameters('rgName')]",
             "properties": {}
         },
         {
             "name": "storageDeployment",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2017-05-10",
-            "resourceGroup": "ResourceGroup2",
+            "resourceGroup": "[parameters('rgName')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup2')]"
+                "[resourceId('Microsoft.Resources/resourceGroups/', parameters('rgName'))]"
             ],
             "properties": {
                 "mode": "Incremental",
