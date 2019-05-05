@@ -7,7 +7,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2018-05-01",
-            "name": "[parameters('storageAccountName')]",
+            "name": "petrstoragerg2",
             "location": "[parameters('rgLocation')]",
             "kind": "StorageV2",
             "sku": {

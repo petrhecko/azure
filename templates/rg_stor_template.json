@@ -13,7 +13,7 @@
         }
     },
     "variables": {
-        "stUri": "[uri(deployment().properties.templateLink.uri, 'st_template.json')]"
+        "stUri": "https://raw.githubusercontent.com/petrhecko/azure/master/templates/st_template.json"
     },
     "resources": [
 
