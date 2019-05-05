@@ -11,15 +11,15 @@
 
         {
             "type": "Microsoft.Resources/resourceGroups",
-            "apiVersion": "2019-05-01",
-            "location": "centralus",
+            "apiVersion": "2017-10-01",
+            "location": "eastus",
             "name": "ResourceGroup2",
             "properties": {}
         },
         {
             "name": "storageDeployment",
             "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2019-05-01",
+            "apiVersion": "2017-10-01",
             "resourceGroup": "ResourceGroup2",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup2')]"

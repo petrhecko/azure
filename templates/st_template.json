@@ -6,9 +6,9 @@
     "resources": [
         {
             "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2019-05-01",
+            "apiVersion": "2017-10-01",
             "name": "petrstoragerg2",
-            "location": "centralus",
+            "location": "eastus",
             "kind": "StorageV2",
             "sku": {
                 "name": "Standard_LRS"
