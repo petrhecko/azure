@@ -13,7 +13,7 @@
         }
     },
     "variables": {
-        "stUri": "https://raw.githubusercontent.com/petrhecko/azure/master/templates/st_template.json"
+        "appsrvplUrilinux": "https://raw.githubusercontent.com/petrhecko/azure/master/templates/nested_tmpl/app_service_plan_linux.json"
     },
     "resources": [
 
@@ -35,13 +35,8 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[variables('stUri')]",
+                    "uri": "[variables('appsrvplUrilinux')]",
                     "contentVersion": "1.0.0.0"
-                },
-                "parameters": {
-                    "storageAccountName": {
-                        "value": "[parameters('storageAccountName')]"
-                    }
                 }
             }
         }
