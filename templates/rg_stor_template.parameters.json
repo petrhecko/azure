@@ -7,9 +7,6 @@
         },
         "rgLocation":{
             "value": "eastus"
-        },
-        "storageAccountName":{
-            "value": "petrstoragerg6"
-            }
+        }
         }
     }
