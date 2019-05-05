@@ -13,14 +13,14 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2017-05-10",
             "location": "eastus",
-            "name": "ResourceGroup2",
+            "name": "ResourceGroup3",
             "properties": {}
         },
         {
             "name": "storageDeployment",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2017-05-10",
-            "resourceGroup": "ResourceGroup2",
+            "resourceGroup": "ResourceGroup3",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup2')]"
             ],
