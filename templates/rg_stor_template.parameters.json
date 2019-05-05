@@ -3,10 +3,13 @@
     "contentVersion": "1.0.0.1",
     "parameters": {
         "rgName": {
-            "value": "ResourceGroup6"
+            "value": "ResourceGroup7"
         },
         "rgLocation":{
             "value": "eastus"
-        }
+        },
+        "storageAccountName":{
+            "value": "petrstoragerg7"
+            }
         }
     }
