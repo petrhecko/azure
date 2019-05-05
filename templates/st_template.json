@@ -7,7 +7,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2017-10-01",
-            "name": "petrstoragerg4",
+            "name": "petrstoragerg6",
             "location": "eastus",
             "kind": "StorageV2",
             "sku": {

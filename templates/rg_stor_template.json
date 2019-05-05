@@ -15,16 +15,16 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2017-05-10",
             "location": "[parameters('rgLocation')]",
-            "name": "ResourceGroup4",
+            "name": "[parameters('rgName')]",
             "properties": {}
         },
         {
             "name": "storageDeployment",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2017-05-10",
-            "resourceGroup": "ResourceGroup4",
+            "resourceGroup": "[parameters('rgName')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup4')]"
+                "[resourceId('Microsoft.Resources/resourceGroups/', parameters('rgName'))]"
             ],
             "properties": {
                 "mode": "Incremental",
