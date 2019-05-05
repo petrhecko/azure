@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.1",
     "parameters": {
         "rgName": {
-            "value": "ResourceGroup8"
+            "value": "ResourceGroup9"
         },
         "rgLocation":{
             "value": "eastus"
