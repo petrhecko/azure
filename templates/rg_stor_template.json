@@ -19,7 +19,7 @@
         {
             "name": "storageDeployment",
             "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2017-10-01",
+            "apiVersion": "2017-05-10",
             "resourceGroup": "ResourceGroup2",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup2')]"
