@@ -12,7 +12,7 @@
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2017-05-10",
-            "location": "Central US",
+            "location": "centralus",
             "name": "ResourceGroup2",
             "properties": {}
         },

@@ -8,7 +8,7 @@
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2018-05-01",
             "name": "petrstoragerg2",
-            "location": "Central US",
+            "location": "centralus",
             "kind": "StorageV2",
             "sku": {
                 "name": "Standard_LRS"
