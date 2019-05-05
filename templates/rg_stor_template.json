@@ -2,7 +2,9 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        
+        "rgLocation": {
+            "type": "string"
+        }
     },
     "variables": {
         "stUri": "https://raw.githubusercontent.com/petrhecko/azure/master/templates/st_template.json"
@@ -12,17 +14,17 @@
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2017-05-10",
-            "location": "eastus",
-            "name": "ResourceGroup3",
+            "location": "[parameters('rgLocation')]",
+            "name": "ResourceGroup4",
             "properties": {}
         },
         {
             "name": "storageDeployment",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2017-05-10",
-            "resourceGroup": "ResourceGroup3",
+            "resourceGroup": "ResourceGroup4",
             "dependsOn": [
-                "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup3')]"
+                "[resourceId('Microsoft.Resources/resourceGroups/', 'ResourceGroup4')]"
             ],
             "properties": {
                 "mode": "Incremental",
